@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "projects": {
+    "admin-dashboard": "apps/admin-dashboard",
+    "api": "apps/api",
+    "app": "apps/app",
+    "app-e2e": "apps/app-e2e",
+    "client": "apps/client",
+    "client-e2e": "apps/client-e2e"
+  }
+}
