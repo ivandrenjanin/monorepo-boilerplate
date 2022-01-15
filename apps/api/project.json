@@ -3,6 +3,16 @@
   "sourceRoot": "apps/api/src",
   "projectType": "application",
   "targets": {
+    "deploy": {
+      "builder": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": [
+          "nx build api",
+          "docker build -f ./apps/api/Dockerfile . -t api"
+        ],
+        "parallel": false
+      }
+    },
     "build": {
       "executor": "@nrwl/node:build",
       "outputs": ["{options.outputPath}"],
@@ -10,7 +20,8 @@
         "outputPath": "dist/apps/api",
         "main": "apps/api/src/main.ts",
         "tsConfig": "apps/api/tsconfig.app.json",
-        "assets": ["apps/api/src/assets"]
+        "assets": ["apps/api/src/assets"],
+        "generatePackageJson": true
       },
       "configurations": {
         "production": {
@@ -29,7 +40,8 @@
     "serve": {
       "executor": "@nrwl/node:execute",
       "options": {
-        "buildTarget": "api:build"
+        "buildTarget": "api:build",
+        "port": 8081
       }
     },
     "lint": {

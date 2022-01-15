@@ -19,7 +19,8 @@
       "executor": "@nrwl/next:server",
       "options": {
         "buildTarget": "admin-dashboard:build",
-        "dev": true
+        "dev": true,
+        "port": 8080
       },
       "configurations": {
         "production": {
