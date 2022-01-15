@@ -2,7 +2,7 @@
 
 - `admin-dashboard` -> Next.js app for admin dashboard
 - `client` -> Next.js app for client site
-- `client` -> React Native app for client app
+- `app` -> React Native app for client app
 - `api` -> Nest App for Backend
 
 # NxRepoSetup
