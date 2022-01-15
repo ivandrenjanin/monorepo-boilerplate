@@ -1,4 +1,9 @@
+# Description
 
+- `admin-dashboard` -> Next.js app for admin dashboard
+- `client` -> Next.js app for client site
+- `client` -> React Native app for client app
+- `api` -> Nest App for Backend
 
 # NxRepoSetup
 
@@ -78,8 +83,6 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 ## Further help
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
-
-
 
 ## ☁ Nx Cloud
 
