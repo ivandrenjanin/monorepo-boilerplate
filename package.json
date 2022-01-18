@@ -4,8 +4,8 @@
   "license": "MIT",
   "scripts": {
     "start": "nx serve",
-    "build": "nx build",
-    "test": "nx test",
+    "build": "nx run-many --target=build --all",
+    "test": "nx run-many --target=test --all",
     "start:all": "nx run-many --target=serve --all"
   },
   "private": true,
@@ -83,4 +83,3 @@
     "typescript": "~4.4.3"
   }
 }
-
